@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+:root{
+  --main-color: #2288ff;
+  --second-color: #192f6a;
+  --text-color: #314862;
+  --bg-color: #ffff;
+  --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:'Itim';
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+}
+body{
+    background-color: rgb(173, 255, 255);
+    /* background: linear-gradient(180deg, #f6fdc3 9.77%, #cdfadb 110.16%); */
+}
+.navbar{
+    background-color: white;
+    width: 1000px;
+    height: 70px;
+    border: 10px transparent;
+    border-radius: 1000px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    padding-right : 10px; /* Add padding to the navigation bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin-bottom: 10px;
+    z-index: 1000;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.logo{
+    object-fit: cover;
+    height: 360px;
+    width: 180px;
+}
+.getstarted{
+    height: 45px;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-size: medium;
+    font-family: fantasy;
+    border: 3px solid white;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: inset;
+    color: white;
+}
+.getstarted:hover{
+  /* background-color: rgb(255, 255, 255);
+  color: #111; */
+  
+  transform: translateY(-5px);
+  transition: 0.5s;
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divintro{
+    /* height: 400px; */
+    width: 100%;
+    display: flex;
+    position:relative;
+    top:100px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+.div_intro_video{
+    display: flex;
+    justify-content: center;
+}
+.introvideo{
+    height: 500px;
+    width: 700px;
+}
+.aboutus{
+    height: 700px;
+    margin: 10px 10px 10px 10px;
+    grid-column-gap: 2.78em;
+    grid-row-gap: 2.78em;
+    /* background-color: #00aeff; */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: transparent;
+    border-radius: 50px;
+    
+    /* border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2.78em 3.75em;
+    display: flex;
+} */
+}
+.summaryvideo{
+    height: 500px;
+    width: 700px;
+    border: 10px rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 50px;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 20px;
+    outline-style: double;
+}
+
+/*bishwas ko css*/
+.properties-container {
+  display: block;
+  gap: 3rem;
+  padding: 0 50px;
+  height: auto;
+  margin: 10px 10px 10px 10px;
+  grid-column-gap: 2.78em;
+  grid-row-gap: 2.78em;
+  /* background-color: #00aeff; */
+  border: transparent;
+  border-radius: 50px;
+  
+}
+.properties-container .box {
+  /* background: var(--bg-color);
+  padding: 10px;
+  border : 10px
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  width: 45%;
+  height: 400px;
+  margin: 20px 20px 20px 20px; */
+  background: var(--bg-color);
+  height: 450px;
+  width: 40%;
+  margin: 20px 20px 20px 20px;
+  margin-bottom: 50px ;
+  display: flex;
+  flex-direction: column;
+}
+
+.properties-container .box:hover {
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+
+.reverse_admission{
+  height: 500px;
+  background-image: url(images/theme1.png);
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  margin: 50px 10px 10px 10px;
+}
+.join_with_us{
+  height: 500px;
+  background-color: rgb(255, 210, 200);
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  margin: 50px 10px 10px 10px;
+}
+.learnmore:hover{
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.facts{
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.to_display{
+  margin-top: 30px;
+  height: 150px;
+}
+
+/*footer*/
+footer{
+  background-color: black;
+  border-bottom: none;
+  margin-top: 30px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+}
+.footerContainer{
+  width:100% ;
+  padding: 0px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color:black ;
+  opacity: 0.9;
+}
+
+/*hover effects on Social Media Icons*/
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+
+}
+
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav{
+  /* margin: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
